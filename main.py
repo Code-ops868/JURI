@@ -13,18 +13,8 @@ class Principal:
         self.option_menu=args
         self._component_func=args
         with st.sidebar:
-            #seleçao = st.selectbox("Advogacia Online",['','Quem Somos','Dúvida Jurídica','Consulta Jurídica','Área VIP','Artigos','Cámera'])
-                seleçao=option_menu(
-                menu_title="MENU",
-                options=["INÍCIO","QUEM SOMOS","DÚVIDAS JURÍDICAS","CONSULTAS JURÍDICAS","ÁREA VIP","CÁMERA","ARTIGOS","MENSAGENS"],
-                menu_icon="cast",
-                icons=["house","pen","people","table","people","camera","book","chat"],
-                styles={
-                    "icon":{
-                    "color":"green"
-                            }
-                        }
-                        )
+            seleçao = st.selectbox("Advogacia Online",["INÍCIO","QUEM SOMOS","DÚVIDAS JURÍDICAS","CONSULTAS JURÍDICAS","ÁREA VIP","CÁMERA","ARTIGOS","MENSAGENS"])
+                
         #################################### CONFIGURAÇOES DOS COMPONENTES #########################################
 
 
